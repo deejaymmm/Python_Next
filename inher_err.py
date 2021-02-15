@@ -120,4 +120,24 @@ ArithmeticError
 FileNotFoundError
 Sample Output:
 
-FileNotFoundError"""
+FileNotFoundError
+
+
+[+] Test #1. OK
+[ ] Test #2. Wrong answer
+[ ] Test #3. Wrong answer
+[ ] Test #4. Wrong answer
+[+] Test #5. OK
+[ ] Test #6. Wrong answer
+[ ] Test #7. Wrong answer
+[ ] Test #8. Wrong answer
+[ ] Test #9. Wrong answer
+[ ] Test #10. Wrong answer
+[ ] Test #11. Wrong answer
+[ ] Test #12. Wrong answer
+[+] Test #13. OK
+[ ] Test #14. Wrong answer
+[ ] Test #15. Wrong answer
+[ ] Test #16. Wrong answer
+
+3 of 16 test(s) passed."""
