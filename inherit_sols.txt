@@ -1,0 +1,28 @@
+# solution from teacher:
+
+n = int(input())
+
+parents = {}
+for _ in range(n):
+    a = input().split()
+    parents[a[0]] = [] if len(a) == 1 else a[2:]
+
+def is_parent(child, parent):
+    return child == parent or any(map(lambda p: is_parent(p, parent), parents[child]))
+
+q = int(input())
+for _ in range(q):
+    a, b = input().split()
+    print("Yes" if is_parent(b, a) else "No")
+
+# extreme solution without recursion: 
+
+inheritance = dict()
+for i in [input().split() for _ in range(int(input()))]:
+    inheritance[i[0]] = i[2:]
+for k, v in inheritance.items():
+    for i in v:
+        if i in inheritance:
+            inheritance[k].extend(inheritance[i])
+for parent, inheritor in [input().split() for _ in range(int(input()))]:
+    print(['No', 'Yes'][parent == inheritor or parent in inheritance[inheritor]])
